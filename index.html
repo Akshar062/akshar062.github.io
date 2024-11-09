@@ -436,6 +436,54 @@
                 </div>
             </div>
         </section>
+        <section class="container" id="blogs">
+        <div class="blogs-content">
+            <div class="main-title">
+                <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+            </div>
+            <div id="medium-blogs" class="blogs"></div>
+        </div>
+    </section>
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script>
+        fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@your_username')
+            .then(response => response.json())
+            .then(data => {
+                const blogsContainer = document.getElementById('medium-blogs');
+                data.items.forEach(item => {
+                    const blog = document.createElement('div');
+                    blog.className = 'blog';
+                    blog.innerHTML = `
+                        <img src="${item.thumbnail}" alt="">
+                        <div class="blog-text">
+                            <h4>${item.title}</h4>
+                            <p>${item.description}</p>
+                            <a href="${item.link}" target="_blank">Read more</a>
+                        </div>
+                    `;
+                    blogsContainer.appendChild(blog);
+                });
+            });
+    </script>
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
