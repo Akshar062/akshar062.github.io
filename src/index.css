@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-bright-red via-neon-purple to-bright-red;
+}
+
+.card {
+  @apply bg-darker-bg rounded-lg p-6 border border-neon-purple/20 hover:border-neon-purple/50 transition-all duration-300;
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.1);
+}
+
+.nav-link {
+  @apply relative px-4 py-2 text-white/80 hover:text-white transition-colors duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-0 h-0.5 bg-bright-red transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
