@@ -14,7 +14,7 @@ function App() {
     },
     {
       category: "IoT & Embedded",
-      items: ["Python", "Raspberry Pi", "Sensors Integration", "GPIO Programming", "MQTT"]
+      items: ["Python", "Raspberry Pi", "Sensors Integration", "GPIO Programming"]
     }
   ];
 
