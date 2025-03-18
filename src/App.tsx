@@ -392,15 +392,15 @@ function App() {
             <h2 className="text-4xl font-bold mb-6 gradient-text">Get in Touch</h2>
             <p className="text-white/80 mb-12">Let's collaborate on your next Android or IoT project</p>
             <div className="flex justify-center gap-8">
-              <a href="#" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <a href="https://github.com/Akshar062" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
                 <Github className="w-6 h-6" />
                 <span>GitHub</span>
               </a>
-              <a href="#" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/akshar-kalathiya-884401281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
                 <Linkedin className="w-6 h-6" />
                 <span>LinkedIn</span>
               </a>
-              <a href="#" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <a href="aksharkalathiya2740@gmail.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
                 <Mail className="w-6 h-6" />
                 <span>Email</span>
               </a>
