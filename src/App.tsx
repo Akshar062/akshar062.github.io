@@ -400,10 +400,10 @@ function App() {
                 <Linkedin className="w-6 h-6" />
                 <span>LinkedIn</span>
               </a>
-              <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+{/*               <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
                 <Instagram className="w-6 h-6" />
                 <span>Instagram</span>
-              </a>
+              </a> */}
             </div>
           </motion.div>
         </div>
