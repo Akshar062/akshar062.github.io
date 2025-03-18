@@ -400,9 +400,9 @@ function App() {
                 <Linkedin className="w-6 h-6" />
                 <span>LinkedIn</span>
               </a>
-              <a href="mailto:aksharkalathiya2740@gmail.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
-                <Mail className="w-6 h-6" />
-                <span>Email</span>
+              <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+                <Instagram className="w-6 h-6" />
+                <span>Instagram</span>
               </a>
             </div>
           </motion.div>
