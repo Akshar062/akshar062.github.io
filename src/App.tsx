@@ -400,7 +400,7 @@ function App() {
                 <Linkedin className="w-6 h-6" />
                 <span>LinkedIn</span>
               </a>
-              <a href="aksharkalathiya2740@gmail.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <a href="mailto:aksharkalathiya2740@gmail.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
                 <Mail className="w-6 h-6" />
                 <span>Email</span>
               </a>
