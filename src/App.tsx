@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Github, Linkedin, Mail, Terminal, Zap, Smartphone, Database, Cloud, Layout, Award, BookOpen, Users, Briefcase, Cpu, Radio, ChevronRight, Download, Menu, X, ExternalLink } from 'lucide-react';
+import { Code2, Github, Linkedin, Mail, Zap, Smartphone, Cloud, Layout, Award, BookOpen, Users, Briefcase, Cpu, Radio, ChevronRight, Download, Menu, X, ExternalLink } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +18,7 @@ function App() {
       setCurrentRole((prev) => (prev + 1) % roles.length);
     }, 3000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const skills = [
